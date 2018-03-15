@@ -14,10 +14,13 @@ import android.util.Log;
 
 import ca.ualberta.cs.lonelytweet.LonelyTweet;
 
-public class TweetsFileManager {
+//Made Class package private
+class TweetsFileManager {
 
-	public static final String FILE_NAME = "file.sav";
-	private Context ctx;
+	//file name now private
+	private static final String FILE_NAME = "file.sav";
+	//made ctx final
+	private final Context ctx;
 
 	public TweetsFileManager(Context ctx) {
 		this.ctx = ctx;

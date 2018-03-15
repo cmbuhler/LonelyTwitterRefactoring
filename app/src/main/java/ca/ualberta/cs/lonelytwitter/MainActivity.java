@@ -77,11 +77,13 @@ public class MainActivity extends Activity {
 		tweetsProvider.saveTweets(getTweets());
 	}
 
-	public List<LonelyTweet> getTweets() {
+	//Made Private
+	private List<LonelyTweet> getTweets() {
 		return tweets;
 	}
 
-	public void setTweets(List<LonelyTweet> tweets) {
+	//Made private
+	private void setTweets(List<LonelyTweet> tweets) {
 		this.tweets = tweets;
 	}
 }
